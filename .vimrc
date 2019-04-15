@@ -23,7 +23,7 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=(%l/%L,
 " ファイルエンコード
 set encoding=utf-8
 scriptencoding utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=ucs-bom,utf-8,shift-jis,iso-2022-jp-3,iso-2022-jp-2,euc-jisx0213,euc-jp,cp932
 set fileformats=unix,dos,mac
 set ambiwidth=double
 
