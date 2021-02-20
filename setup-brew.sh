@@ -5,6 +5,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 brew doctor
+brew tap homebrew/cask-versions
 
 # - Install
 # -- language
@@ -41,4 +42,3 @@ brew install --cask mos
 # - Setting
 # -- anyenv
 anyenv init
-
