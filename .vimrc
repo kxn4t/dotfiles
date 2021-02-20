@@ -4,7 +4,7 @@ colorscheme iceberg
 
 " swapfileは使わない
 set noswapfile
-" エディタウィンドウの末尾から2行目にステータスラインを常時表示させる 
+" エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
 set laststatus=2
 " ステータスに以下を表示する
   "ファイル名
