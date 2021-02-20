@@ -11,3 +11,8 @@ rm -rf iceberg
 ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
+
+# zsh-completions
+rm -f ~/.zcompdump; compinit
+# when receive "zsh compinit: insecure directories" warnings
+# chmod -R go-w '/opt/homebrew/share/zsh'
