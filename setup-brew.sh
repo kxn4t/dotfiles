@@ -42,3 +42,4 @@ brew install --cask mos
 # - Setting
 # -- anyenv
 anyenv init
+anyenv install --init
