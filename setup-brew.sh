@@ -12,7 +12,7 @@ brew tap homebrew/cask-versions
 brew install anyenv
 brew install corretto11
 # -- shell
-brew install zsh
+# brew install zsh # already installed in macOS
 brew install zsh-completions
 brew install zsh-syntax-highlighting
 brew install starship
