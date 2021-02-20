@@ -1,6 +1,7 @@
 " カラースキーマはicebergを使う
 syntax on
 colorscheme iceberg
+set termguicolors
 
 " swapfileは使わない
 set noswapfile
