@@ -12,7 +12,11 @@ ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
 
+source ~/.zshrc
+source ~/.zprofile
 # zsh-completions
 rm -f ~/.zcompdump; compinit
 # when receive "zsh compinit: insecure directories" warnings
+compaudit
 # chmod -R go-w '/opt/homebrew/share/zsh'
+# chmod -R go-w '/opt/homebrew/share'
