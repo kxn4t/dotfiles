@@ -1,4 +1,4 @@
-#!/usr/local/bin/zsh
+#!/bin/zsh
 
 # set vim colorscheme
 mkdir -p ~/.vim/colors
