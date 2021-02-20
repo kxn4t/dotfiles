@@ -1,7 +1,7 @@
 #!/usr/local/bin/zsh
 
 # set vim colorscheme
-mkdir ~/.vim/colors
+mkdir -p ~/.vim/colors
 mkdir ./iceberg
 curl -L https://github.com/cocopon/iceberg.vim/archive/1.0.tar.gz | tar zx -C iceberg --strip-components 1
 mv iceberg/colors/iceberg.vim ~/.vim/colors
