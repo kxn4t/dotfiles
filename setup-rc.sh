@@ -9,4 +9,5 @@ rm -rf iceberg
 
 # create a symbolic link
 ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
+ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
