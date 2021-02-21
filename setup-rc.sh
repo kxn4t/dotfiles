@@ -11,6 +11,8 @@ rm -rf iceberg
 ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
+mkdir -p ~/.config
+ln -snf "$(cd $(dirname $0) && pwd)/starship.toml" ~/.config/starship.toml
 
 source ~/.zshrc
 source ~/.zprofile
@@ -22,5 +24,5 @@ compaudit
 # chmod -R go-w '/opt/homebrew/share'
 
 # change default shell
-# sudo sh - c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
-# chsh -s /opt/homebrew/bin/zsh
+sudo sh - c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
+chsh -s /opt/homebrew/bin/zsh
