@@ -3,6 +3,8 @@ git config --global pull.ff only
 git config --global color.ui true
 git config --global core.editor vim
 git config --global core.quotepath false
+mkdir ~/develop
+git config --global ghq.root ~/develop
 
 # set name & email
 read -p 'Please enter your user name: ' gitname
