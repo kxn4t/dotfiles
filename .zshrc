@@ -31,4 +31,5 @@ alias fc="find_cd"
 
 # anyenv
 eval "$(anyenv init -)"
-
+# starship
+eval "$(starship init zsh)"
