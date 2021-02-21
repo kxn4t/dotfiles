@@ -1,5 +1,6 @@
 # ---- export ---------------------
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+export PATH=/opt/homebrew/bin/git:$PATH
 
 # ---- alias ---------------------
 alias ll='ls -la'
