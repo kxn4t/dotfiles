@@ -1,5 +1,6 @@
 #!/bin/bash
 
+xcode-select --install
 # - Maybe this supports Apple Silicon :)
 # - Homebrew setup
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -8,13 +9,20 @@ brew doctor
 brew tap homebrew/cask-versions
 
 # - Install
+
 # -- language
+# https://github.com/anyenv/anyenv
 brew install anyenv
+# https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/macos-install.html
 brew install corretto11
+
 # -- shell
 # brew install zsh # already installed in macOS
+# https://github.com/zsh-users/zsh-completions
 brew install zsh-completions
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 brew install zsh-syntax-highlighting
+# https://starship.rs/ja-JP/
 brew install starship
 # -- util
 brew install vim
@@ -42,4 +50,3 @@ brew install --cask mos
 # - Setting
 # -- anyenv
 anyenv init
-anyenv install --init
