@@ -58,6 +58,8 @@ set cursorline
 set whichwrap=b,s,h,l,<,>,[,],~
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
+" InsertモードでBackspaceがいい感じに使えるように
+set backspace=indent,eol,start
 
 " 大文字小文字を無視
 set ignorecase
