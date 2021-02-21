@@ -1,6 +1,6 @@
 [character]
-success_symbol = "[✖╹◡╹✖ ❮](bold green) "
-error_symbol = "[✖X_X✖ ❮](bold red) "
+success_symbol = "[✖╹◡╹✖](bold yellow) <"
+error_symbol = "[✖X_X✖](bold red) <"
 
 [cmd_duration]
 min_time = 10_000
