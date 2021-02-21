@@ -21,6 +21,12 @@ fi
 # zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# peco
+function find_cd() {
+    cd "$(find . -type d | peco)"
+}
+alias fc="find_cd"
+
 # anyenv
 eval "$(anyenv init -)"
 
