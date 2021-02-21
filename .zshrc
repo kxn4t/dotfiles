@@ -17,13 +17,15 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
+# ignore case
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # peco
 function find_cd() {
-    cd "$(find . -type d | peco)"
+  cd "$(find . -type d | peco)"
 }
 alias fc="find_cd"
 
