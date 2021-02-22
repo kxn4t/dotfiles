@@ -33,6 +33,9 @@ setopt hist_reduce_blanks
 # zsh sessions will append their history list to the history file, rather than replace it
 setopt append_history
 
+# -- other --
+# reverse suggestion [shift + tab]
+bindkey "\e[Z" reverse-menu-complete
 
 # ---- other ---------------------
 # -- zsh-completions --
