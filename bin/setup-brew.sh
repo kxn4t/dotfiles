@@ -22,6 +22,8 @@ brew install corretto11
 brew install zsh-completions
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 brew install zsh-syntax-highlighting
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+brew install zsh-autosuggestions
 # https://starship.rs/ja-JP/
 brew install starship
 # -- util

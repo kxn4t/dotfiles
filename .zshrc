@@ -9,6 +9,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# ---- zsh option ---------------------
+
 # ---- other ---------------------
 # zsh-completions
 if type brew &>/dev/null; then
@@ -22,6 +24,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-users/zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # peco
 function find_cd() {
