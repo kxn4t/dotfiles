@@ -1,4 +1,17 @@
 # dotfiles
+## zsh
+use [Starship](https://starship.rs/)  
+<img src="https://user-images.githubusercontent.com/20788898/108704994-12500680-7550-11eb-8606-00e569985e64.png" width="540px">
+
+## vim
+use [Iceberg.vim](https://cocopon.github.io/iceberg.vim/)  
+<img src="https://user-images.githubusercontent.com/20788898/108704477-6c040100-754f-11eb-9947-05d45b0714a7.png" width="540px">
+
+## font
+use `FiraMono Nerd Font Mono`  
+*require: any [Nerd Fonts](https://www.nerdfonts.com/) font
+
+## note
 I use the Apple Silicon version of Homebrew, so the path may be different.
 
 e.g.  
