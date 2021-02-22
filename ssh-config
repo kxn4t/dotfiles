@@ -1,0 +1,7 @@
+Host *
+  TCPKeepAlive yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 30
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentitiesOnly yes
