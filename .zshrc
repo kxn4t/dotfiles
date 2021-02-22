@@ -58,6 +58,20 @@ function find_cd() {
 }
 alias fc="find_cd"
 
+# find history
+# if enter the escape key, it will do nothing
+function peco-select-history() {
+  local select_history=$(history -n 1 | tail -r | peco --query "$LBUFFER")
+  if [ -n "$select_history" ]; then
+    BUFFER="$select_history"
+    CURSOR=$#BUFFER
+    zle reset-prompt
+  fi
+  zle reset-prompt
+}
+zle -N peco-select-history
+bindkey '^R' peco-select-history
+
 # -- anyenv --
 eval "$(anyenv init -)"
 # -- starship --
