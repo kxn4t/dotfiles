@@ -11,7 +11,7 @@ rm -rf iceberg
 ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
 ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
-mkdir -p ~/.config
+mkdir ~/.config
 ln -snf "$(cd $(dirname $0) && pwd)/starship.toml" ~/.config/starship.toml
 
 source ~/.zshrc
