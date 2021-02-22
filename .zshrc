@@ -55,12 +55,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # -- peco --
-# find and change directory
-function find_cd() {
-  cd "$(find . -type d | peco)"
-}
-alias fc="find_cd"
-
 # find history
 # if enter the escape key, it will do nothing
 function peco-select-history() {
