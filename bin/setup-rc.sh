@@ -8,11 +8,11 @@ mv iceberg/colors/iceberg.vim ~/.vim/colors
 rm -rf iceberg
 
 # create a symbolic link
-ln -snf "$(cd $(dirname $0) && pwd)/.zshrc" ~/
-ln -snf "$(cd $(dirname $0) && pwd)/.zprofile" ~/
-ln -snf "$(cd $(dirname $0) && pwd)/.vimrc" ~/
+ln -snf "$(cd $(dirname $0) && cd .. && pwd)/.zshrc" ~/
+ln -snf "$(cd $(dirname $0) && cd .. && pwd)/.zprofile" ~/
+ln -snf "$(cd $(dirname $0) && cd .. && pwd)/.vimrc" ~/
 mkdir ~/.config
-ln -snf "$(cd $(dirname $0) && pwd)/starship.toml" ~/.config/starship.toml
+ln -snf "$(cd $(dirname $0) && cd .. && pwd)/starship.toml" ~/.config/starship.toml
 
 source ~/.zshrc
 source ~/.zprofile
