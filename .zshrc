@@ -36,6 +36,8 @@ setopt append_history
 # -- other --
 # reverse suggestion [shift + tab]
 bindkey "\e[Z" reverse-menu-complete
+# automatically append trailing "/"" in directory name completion
+setopt auto_param_slash
 
 # ---- other ---------------------
 # -- zsh-completions --
@@ -68,6 +70,54 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^R' peco-select-history
+
+# find ghq list and cd
+## - for keybind
+# function peco-cd-ghq-src() {
+#     local repo=$(ghq list | peco --prompt 'ghq list>' --query "$LBUFFER")
+#     if [ -n "$repo" ]; then
+#         repo=$(ghq list --full-path --exact $repo)
+#         BUFFER="cd ${repo}"
+#         zle accept-line
+#     fi
+#     zle clear-screen
+# }
+# zle -N peco-cd-ghq-src
+# bindkey '^]' peco-cd-ghq-src
+## - for alias
+function peco-cd-ghq-src() {
+  local repo=$(ghq list | peco --prompt 'ghq list>')
+  if [ -n "$repo" ]; then
+    cd $(ghq list --full-path --exact $repo)
+  fi
+}
+alias fg="peco-cd-ghq-src"
+
+# insert directory path at cursor position
+function peco-insert-directory() {
+  local dir="$(fd --type directory --hidden --no-ignore --exclude .git/ --color never 2>/dev/null | peco --prompt 'directory>')"
+  if [ -n "$dir" ]; then
+    dir=$(echo "$dir" | tr -d '\n') # remove line break
+    dir=$(printf %q "$dir") # escape
+    BUFFER="${LBUFFER}${dir}${RBUFFER}"
+    CURSOR=$#BUFFER
+  fi
+}
+zle -N peco-insert-directory
+bindkey '^Xf' peco-insert-directory
+
+# insert file path at cursor position
+function peco-insert-file() {
+  local file="$(fd --type file --hidden --no-ignore --exclude .git/ --color never 2>/dev/null | peco --prompt 'file>')"
+  if [ -n "$file" ]; then
+    file=$(echo "$file" | tr -d '\n') # remove line break
+    file=$(printf %q "$file") # escape
+    BUFFER="${LBUFFER}${file}${RBUFFER}"
+    CURSOR=$#BUFFER
+  fi
+}
+zle -N peco-insert-file
+bindkey '^X^f' peco-insert-file
 
 # -- anyenv --
 eval "$(anyenv init -)"
