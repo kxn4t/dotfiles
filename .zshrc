@@ -9,6 +9,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 alias mkdir='mkdir -p'
+# search branch
+alias -g B='`git branch | peco --prompt "branch>"| sed -e "s/^\*[ ]*//g"`'
 
 # ---- zsh option ---------------------
 # -- history --
