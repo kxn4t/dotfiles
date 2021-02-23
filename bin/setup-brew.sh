@@ -32,6 +32,7 @@ brew install git
 brew install peco
 brew install ghq
 brew install jq
+brew install fd
 # -- font
 brew install homebrew/cask-fonts/font-fira-mono-nerd-font
 
