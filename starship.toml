@@ -1,0 +1,29 @@
+[character]
+success_symbol = "[ ✖╹◡╹✖](bold green) <"
+error_symbol = "[ ✖X_X✖](bold red) <"
+
+[cmd_duration]
+min_time = 10_000
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[kubernetes]
+disabled = false
+
+[package]
+disabled = true
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "

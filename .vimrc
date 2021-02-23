@@ -1,10 +1,11 @@
 " カラースキーマはicebergを使う
 syntax on
 colorscheme iceberg
+set termguicolors
 
 " swapfileは使わない
 set noswapfile
-" エディタウィンドウの末尾から2行目にステータスラインを常時表示させる 
+" エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
 set laststatus=2
 " ステータスに以下を表示する
   "ファイル名
@@ -57,6 +58,8 @@ set cursorline
 set whichwrap=b,s,h,l,<,>,[,],~
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
+" InsertモードでBackspaceがいい感じに使えるように
+set backspace=indent,eol,start
 
 " 大文字小文字を無視
 set ignorecase
