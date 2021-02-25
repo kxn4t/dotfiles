@@ -24,5 +24,5 @@ compaudit
 # chmod -R go-w '/opt/homebrew/share'
 
 # change default shell
-sudo sh - c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
+sudo sh -c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
 chsh -s /opt/homebrew/bin/zsh
