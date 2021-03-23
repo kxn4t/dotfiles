@@ -4,6 +4,7 @@ git config --global pull.ff only
 git config --global color.ui true
 git config --global core.editor vim
 git config --global core.quotepath false
+git config --global alias.push-f "push --force-with-lease"
 mkdir ~/Workspace
 git config --global ghq.root ~/Workspace
 
