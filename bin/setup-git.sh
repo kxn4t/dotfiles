@@ -1,4 +1,5 @@
 #!/bin/sh
+git config --global merge.ff false
 git config --global pull.ff only
 git config --global color.ui true
 git config --global core.editor vim
