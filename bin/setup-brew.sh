@@ -4,11 +4,16 @@ xcode-select --install
 # - Maybe this supports Apple Silicon :)
 # - Homebrew setup
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew update
 brew doctor
 brew tap homebrew/cask-versions
 
 # - Install
+# -- Rosetta 2 (Apple Silicon)
+sudo softwareupdate --install-rosetta
 
 # -- language
 # https://github.com/anyenv/anyenv
