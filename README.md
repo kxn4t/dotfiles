@@ -30,3 +30,9 @@ $ sh setup-git.sh
 $ sh setup-rc.sh
 $ sh setup-anyenv.sh
 ```
+### First...
+```
+mkdir ~/Workspace
+cd ~/Workspace
+git clone https://github.com/kxn4t/dotfiles.git
+```
